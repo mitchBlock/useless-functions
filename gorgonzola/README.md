@@ -1,1 +1,4 @@
-A function to figure out how many random 10 character strings it takes before a seed can randomly generate the word 'gorgonzola'
+# Gorgonzola Function #
+
+## What It Does ##
+A function to figure out how many random 10 character strings it takes before a seed can randomly generate the word 'gorgonzola'.
