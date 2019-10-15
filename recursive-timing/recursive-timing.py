@@ -27,13 +27,13 @@ def loop_fibonacci(num_in_seq):
 	if (num_in_seq == 1 or num_in_seq == 2):
 		return 1;
 	prev_num = 1;
-	prev_prev_num = 1;
-	for i in range (3, num_in_seq):
-		curr_num = prev_num + prev_prev_num;
-		prev_prev_num = prev_num;
+	curr_num = 1;
+	for _ in range (3, num_in_seq): # Can also be declared with iterator and while loop
+		holder_num = curr_num + prev_num;
 		prev_num = curr_num;
+		curr_num = holder_num;
 
-	return prev_num + prev_prev_num;
+	return curr_num + prev_num;
 
 
 if __name__ == '__main__':
